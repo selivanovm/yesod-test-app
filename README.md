@@ -1,11 +1,11 @@
 ## Yesod Test App
   
-  Tested on : 
+1. Tested on
     * GHC 7.6.3
     * cabal lib 1.20.0.1
     * cabal-install 1.20.0.3
  
-  to run execute in console:
+2. To run execute in console:
   
   ```
   # cabal sandbox init
@@ -13,7 +13,7 @@
   # yesod devel
   ```
 
-### API
+3. API
 
   * List items : http://localhost:3000/shoes-list
   * Add item : http://localhost:3000/shoes-list/add
