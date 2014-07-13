@@ -1,0 +1,9 @@
+<h1> Item
+<h3> #{itemDescription item}
+<div>
+  <img src=/static/img/#{itemPhoto item}>
+<p> Color: #{itemColor item}
+<p> Size : #{itemSize item}
+<a href=@{ListItemsR}> Back to the items list
+
+

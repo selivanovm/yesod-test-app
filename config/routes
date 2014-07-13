@@ -5,3 +5,6 @@
 /robots.txt RobotsR GET
 
 / HomeR GET POST
+/shoes-list/add AddItemR POST
+/shoes-list ListItemsR GET
+/get/#ItemId ShowItemR GET

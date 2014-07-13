@@ -1,0 +1,9 @@
+<h1>Items</h1>
+$if null items
+  <p> There are no items in the list
+$else
+  <ul>
+    $forall Entity itemId item <- items
+      <li>
+        <a href=@{ShowItemR itemId}> #{itemDescription item}
+

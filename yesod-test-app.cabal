@@ -20,6 +20,9 @@ library
                      Settings.StaticFiles
                      Settings.Development
                      Handler.Home
+                     Handler.AddItem
+                     Handler.ListItems
+                     Handler.ShowItem
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
@@ -40,6 +43,7 @@ library
                 EmptyDataDecls
                 NoMonomorphismRestriction
                 DeriveDataTypeable
+                FlexibleInstances
 
     build-depends: base                          >= 4          && < 5
                  , yesod                         >= 1.2.5      && < 1.3
@@ -67,6 +71,8 @@ library
                  , monad-logger                  >= 0.3        && < 0.4
                  , fast-logger                   >= 2.1.4      && < 2.2
                  , wai-logger                    >= 2.1        && < 2.2
+                 , base64-bytestring
+                 , uuid
 
 executable         yesod-test-app
     if flag(library-only)
